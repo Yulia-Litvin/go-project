@@ -10,13 +10,13 @@
 </head>
 <body>
     <header>
-        <img src="/assets/img/logo.png" alt="logo">
+        <img src="/assets/img/logo.svg" alt="logo">
     <nav>
         <b>Меню </b>
         <ul>
             <li><a href="#halls">Залы</a></li>
             <li><a href="#about">О нас</a></li>
-            <li><a href="#">Бронь</a></li>
+            <li><a href="#reserve">Бронь</a></li>
             <li><a href="#">Отзывы</a></li>
             <li><a href="#contacts">Контакты</a></li>
         </ul>
@@ -37,10 +37,21 @@
                 <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
             </figure>
                 </li>
-        <li>Караоке (4 микрофона)</li>
-        <li>Настольные игры</li>
-        <li>Кино сервисы Netflix, IVI, MegoGo, Кинопоиск, Okko</li>
-        <li>PlayStation 5</li>
+        <li><figure>
+            <img src="/assets/img/micro.jpg" alt="vr-glasses">
+            <figcaption>Караоке (4 микрофона)</figcaption></li>
+        <li><figure>
+            <img src="/assets/img/game.jpg" alt="vr-glasses">
+            <figcaption>Настольные игры</figcaption>
+        </figure></li>
+        <li><figure>
+            <img src="/assets/img/netflix.jpg" alt="vr-glasses">
+            <figcaption>Кино сервисы Netflix, IVI, MegoGo, Кинопоиск, Okko</figcaption>
+        </figure></li>
+        <li><figure>
+            <img src="/assets/img/sony.jpg" alt="vr-glasses">
+            <figcaption>PlayStation 5</figcaption>
+        </figure></li>
     </ul>
 </section>
 <section id="halls">
@@ -52,6 +63,130 @@
         <li><a href="/halls/neon-style.html">Neon style</a></li>
     </ol>
 </section>
+
+<section id="reserve">
+    <h2>Забронировать</h2>
+    <form action="https://jsonplaceholder.typicode.com/posts">
+        <fieldset>
+            <label>
+            <input type="radio" name="halls" value="80s-vibes">80's vibes
+        </label>
+
+        <label>
+            <input type="radio" name="halls" value="star-wars">star wars
+        </label>
+
+        <label>
+            <input type="radio" name="halls" value="wild-west">wild west
+        </label>
+
+        <label>
+            <input type="radio" name="halls" value="neon-style">neon style
+        </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Собери набор развлечений</legend>
+            <fieldset>
+                <legend>Приставка:</legend>
+            <label>
+                <input type="radio" name="game-console" value="PS">PlayStation
+            </label>
+    
+            <label>
+                <input type="radio" name="game-console" value="sega">Sega Mega Drive
+            </label>
+    
+            <label>
+                <input type="radio" name="game-console" value="x-box">X-box One S
+            </label>
+    
+            <label>
+                <input type="radio" name="game-console" value="dendy">Dendy
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Настольные игры:</legend>
+        <label>
+            <input type="radio" name="table-games" value="jenga">Jenga
+        </label>
+
+        <label>
+            <input type="radio" name="table-games" value="monopoly">Monopoly
+        </label>
+
+        <label>
+            <input type="radio" name="table-games" value="manchkin">Манчкин
+        </label>
+
+        <label>
+            <input type="radio" name="table-games" value="alias">Alias
+        </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Дополнительно:</legend>
+    <label>
+        <input type="radio" name="entertainment" value="karaoke">Караоке
+    </label>
+
+    <label>
+        <input type="radio" name="entertainment" value="vr">VR
+    </label>
+</fieldset>
+        </fieldset>
+
+        <fieldset>
+            <legend>Выбери дату и время</legend>
+            <label> Дата
+                <input type="date" name="reserve-date" required>
+            </label>
+
+            <label> Время
+                <input type="time" name="reserve-time" required>
+            </label>
+            <br>
+            <br>
+
+            <label> Количество человек
+                <input type="number" name="number" required>
+            </label>
+            <br>
+            <br>
+
+            <label> Имя
+                <input type="text" name="name" required>
+            </label>
+            <br>
+            <br>
+
+            <label> Фамилия
+                <input type="text" name="surname" required>
+            </label>
+            <br>
+            <br>
+
+            <label> Номер телефона
+                <input type="tel" name="phone" required>
+            </label>
+            <br>
+            <br>
+
+            <label>
+                <input type="checkbox" name="age" value="yes"> Я старше 18 лет
+            </label>
+        </fieldset>
+        <br>
+
+        <button type="submit">Забронировать</button>
+        <label>
+            <input type="checkbox" name="agreement" value="yes" required> Я согласен на обработку данных 
+        </label>
+    </form>
+</section>
+
+
 <section id="about">
     <h2>О нас</h2>
     <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.
