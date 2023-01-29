@@ -68,21 +68,19 @@
     <h2>Забронировать</h2>
     <form action="https://jsonplaceholder.typicode.com/posts">
         <fieldset>
-            <label>
-            <input type="radio" name="halls" value="80s-vibes">80's vibes
-        </label>
 
-        <label>
-            <input type="radio" name="halls" value="star-wars">star wars
-        </label>
-
-        <label>
-            <input type="radio" name="halls" value="wild-west">wild west
-        </label>
-
-        <label>
-            <input type="radio" name="halls" value="neon-style">neon style
-        </label>
+        <label for="hall-1">80's vibes</label>
+        <input type="radio"  name="halls" id ="hall-1" value="80s-vibes">
+        
+        <label for="hall-2">star wars</label>
+        <input type="radio" name="halls" id="hall-2"  value="star-wars">
+        
+        <label for="hall-3">wild west </label>
+        <input type="radio"  name="halls" id="hall-3" value="wild-west">
+    
+        <label for="hall-4">neon style</label>
+        <input type="radio"  name="halls" id="hall-4" value="neon-style">
+        
         </fieldset>
 
         <fieldset>
@@ -139,43 +137,38 @@
 
         <fieldset>
             <legend>Выбери дату и время</legend>
-            <label> Дата
-                <input type="date" name="reserve-date" required>
-            </label>
+            <label for="date-field">Дата</label>
+                <input type="date" name="reserve-date" id="date-field" required>
+            
 
-            <label> Время
-                <input type="time" name="reserve-time" required>
-            </label>
-            <br>
-            <br>
-
-            <label> Количество человек
-                <input type="number" name="number" required>
-            </label>
+            <label for="time-field">Время</label>
+                <input type="time" name="reserve-time" id="time-field" required>
+            
             <br>
             <br>
 
-            <label> Имя
-                <input type="text" name="name" required>
-            </label>
+            <label for="number-field">Количество человек</label>
+                <input type="number" name="number" id="number-field" required>
             <br>
             <br>
 
-            <label> Фамилия
-                <input type="text" name="surname" required>
-            </label>
+            <label for="name-field">Имя</label>
+                <input type="text" name="name" id="name-field" required>
             <br>
             <br>
 
-            <label> Номер телефона
-                <input type="tel" name="phone" required>
-            </label>
+            <label for="surname-field">Фамилия</label>
+                <input type="text" name="surname" id="surname-field" required>
             <br>
             <br>
 
-            <label>
-                <input type="checkbox" name="age" value="yes"> Я старше 18 лет
-            </label>
+            <label for="phone-field">Номер телефона</label>
+            <input type="tel" name="phone" id="phone-field" required>
+            <br>
+            <br>
+
+            <label for="age-18">Я старше 18 лет</label>
+                <input type="checkbox" name="age" id="age-18" value="yes"> 
         </fieldset>
         <br>
 
@@ -196,7 +189,7 @@
         
     <blockquote><p><q><b>GAME OVER</b>- это место незабываемых впечатлений </q></p>
         
-   <p><cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
+<p><cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite></p>
 </blockquote>
 </section>
 </main>
