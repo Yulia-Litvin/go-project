@@ -87,7 +87,7 @@
 
             <form action="https://jsonplaceholder.typicode.com/posts">
                 <fieldset>
-                    <h2>Выбери зал</h2>
+                    <legend>Выбери зал</legend>
 
                     <label for="hall-1">80's vibes</label>
                     <input type="radio" name="halls" id="hall-1" value="80s-vibes">
@@ -104,9 +104,9 @@
                 </fieldset>
 
                 <fieldset>
-                    <h2>Собери набор развлечений</h2>
+                    <legend>Собери набор развлечений</legend>
                     <fieldset>
-                        <h2>Приставка:</h2>
+                        <legend>Приставка:</legend>
                         <label>
                             <input type="radio" name="game-console" value="PS">PlayStation
                         </label>
@@ -125,7 +125,7 @@
                     </fieldset>
 
                     <fieldset>
-                        <h2>Настольные игры:</h2>
+                        <legend>Настольные игры:</legend>
                         <label>
                             <input type="checkbox" name="table-games" value="jenga">Jenga
                         </label>
@@ -144,7 +144,7 @@
                     </fieldset>
 
                     <fieldset>
-                        <h2>Дополнительно:</h2>
+                        <legend>Дополнительно:</legend>
                         <label>
                             <input type="checkbox" name="entertainment" value="karaoke">Караоке
                         </label>
@@ -156,36 +156,42 @@
                 </fieldset>
 
                 <fieldset>
-                    <h2>Выбери дату и время</h2>
-                    <fieldset>
-                        <label for="date-field">Дата</label>
-                        <input type="date" name="reserve-date" id="date-field" required>
+                    <legend>Выбери дату и время</legend>
+                    <div>
+                    <div>
+                        <label>
+                        <input type="text" name="reserve-date" placeholder="Дата" required>
+                        </label>
 
 
-                        <label for="time-field">Время</label>
-                        <input type="time" name="reserve-time" id="time-field" required>
+                        <label>
+                        <input type="text" name="reserve-time"  placeholder="Время" required>
+                        </label>
+                        </div>
 
 
 
-                        <label for="number-field">Сколько человек</label>
-                        <input type="number" name="number" id="number-field" required>
-                    </fieldset>
+                        <label>
+                        <input type="number" name="number" placeholder="Сколько человек" required>
+                        </label>
+                        </div>
+                   
 
-                    <fieldset>
+                    <div>
                         <label for="name-field">Имя</label>
                         <input type="text" name="name" id="name-field" required>
 
 
                         <label for="surname-field">Фамилия</label>
                         <input type="text" name="surname" id="surname-field" required>
-                    </fieldset>
+                    </div>
 
-                    <fieldset>
+                    <div>
                         <label for="phone-field">Телефон</label>
                         <input type="tel" name="phone" id="phone-field" required>
                         <label for="email-field">E-mail</label>
                         <input type="email" name="email" id="email-field">
-                    </fieldset>
+                    </div>
                 </fieldset>
 
 
