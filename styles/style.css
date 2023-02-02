@@ -7,7 +7,7 @@ body {
     color: #FFF;
 }
 
-blockquote {
+.blockquote {
     text-transform: uppercase;
 }
 
@@ -16,3 +16,5 @@ blockquote {
     padding: 30px;
     margin: 0 auto;
 }
+
+
