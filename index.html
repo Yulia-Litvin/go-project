@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="/assets/img/icon.svg">
     <link rel="icon" type="image/png" href="/assets/img/icon.png">
-    <title>Document</title>
+    <title>Game Over</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+    <div class="wrapper">
     <header>
         <img src="/assets/img/logo.svg" alt="logo">
         <nav>
@@ -31,42 +33,42 @@
             <ul>
                 <li>
                     <figure>
-                        <img src="/assets/img/vr.jpg" alt="vr-glasses">
+                        <img src="/assets/img/vr.jpg" alt="Парень в очках виртуальной реальности">
                         <figcaption>VR очки</figcaption>
                     </figure>
                 </li>
 
                 <li>
                     <figure>
-                        <img src="/assets/img/audio.jpg" alt="audio-system">
+                        <img src="/assets/img/audio.jpg" alt="Рука на аудиосистеме">
                         <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
                     </figure>
                 </li>
 
                 <li>
                     <figure>
-                        <img src="/assets/img/micro.jpg" alt="vr-glasses">
+                        <img src="/assets/img/micro.jpg" alt="Девушка поет с микрофоном">
                         <figcaption>Караоке (4 микрофона)</figcaption>
                     </figure>
                 </li>
 
                 <li>
                     <figure>
-                        <img src="/assets/img/game.jpg" alt="vr-glasses">
+                        <img src="/assets/img/game.jpg" alt="Люди играют в настольную игру">
                         <figcaption>Настольные игры</figcaption>
                     </figure>
                 </li>
 
                 <li>
                     <figure>
-                        <img src="/assets/img/netflix.jpg" alt="vr-glasses">
+                        <img src="/assets/img/netflix.jpg" alt="Монитор с логотипом Netflix">
                         <figcaption>Кино сервисы Netflix, IVI, MegoGo, Кинопоиск, Okko</figcaption>
                     </figure>
                 </li>
 
                 <li>
                     <figure>
-                        <img src="/assets/img/sony.jpg" alt="vr-glasses">
+                        <img src="/assets/img/sony.jpg" alt="Монитор с логотипом Warzone">
                         <figcaption>PlayStation 5</figcaption>
                     </figure>
                 </li>
@@ -87,7 +89,7 @@
 
             <form action="https://jsonplaceholder.typicode.com/posts">
                 <fieldset>
-                    <h2>Выбери зал</h2>
+                    <legend>Выбери зал</legend>
 
                     <label for="hall-1">80's vibes</label>
                     <input type="radio" name="halls" id="hall-1" value="80s-vibes">
@@ -104,88 +106,83 @@
                 </fieldset>
 
                 <fieldset>
-                    <h2>Собери набор развлечений</h2>
+                    <legend>Собери набор развлечений</legend>
                     <fieldset>
-                        <h2>Приставка:</h2>
-                        <label>
-                            <input type="radio" name="game-console" value="PS">PlayStation
-                        </label>
+                        <legend>Приставка:</legend>
+                        <label for="PS">PlayStation</label>
+                            <input type="radio" name="game-console" id="PS" value="PS">
 
-                        <label>
-                            <input type="radio" name="game-console" value="sega">Sega Mega Drive
-                        </label>
+                        <label for="sega">Sega Mega Drive</label>
+                            <input type="radio" name="game-console" id="sega" value="sega">
+                        
+                        <label for="xbox">X-box One S</label>
+                        <input type="radio" name="game-console" id="xbox" value="x-box">
+                        
 
-                        <label>
-                            <input type="radio" name="game-console" value="x-box">X-box One S
-                        </label>
-
-                        <label>
-                            <input type="radio" name="game-console" value="dendy">Dendy
-                        </label>
+                        <label for="dendy">Dendy</label>
+                            <input type="radio" name="game-console" id="dendy" value="dendy">
+                        
                     </fieldset>
 
                     <fieldset>
-                        <h2>Настольные игры:</h2>
-                        <label>
-                            <input type="checkbox" name="table-games" value="jenga">Jenga
-                        </label>
+                        <legend>Настольные игры:</legend>
+                        <label for="jenga">Jenga</label>
+                            <input type="checkbox" name="table-games" id="jenga" value="jenga">
+                        
 
-                        <label>
-                            <input type="checkbox" name="table-games" value="monopoly">Monopoly
-                        </label>
+                        <label for="monopoly">Monopoly</label>
+                            <input type="checkbox" name="table-games" id="monopoly" value="monopoly">
+                        
 
-                        <label>
-                            <input type="checkbox" name="table-games" value="manchkin">Манчкин
-                        </label>
+                        <label for="manchkin">Манчкин</label>
+                            <input type="checkbox" name="table-games" id="manchkin" value="manchkin">
+                        
 
-                        <label>
-                            <input type="checkbox" name="table-games" value="alias">Alias
-                        </label>
+                        <label for="alias">Alias</label>
+                            <input type="checkbox" name="table-games" id="alias" value="alias">
+                        
                     </fieldset>
 
                     <fieldset>
-                        <h2>Дополнительно:</h2>
-                        <label>
-                            <input type="checkbox" name="entertainment" value="karaoke">Караоке
-                        </label>
+                        <legend>Дополнительно:</legend>
+                        <label for="karaoke">Караоке</label>
+                            <input type="checkbox" name="entertainment" id="karaoke" value="karaoke">
+                        
 
-                        <label>
-                            <input type="checkbox" name="entertainment" value="vr">VR
-                        </label>
+                        <label for="vr">VR</label>
+                            <input type="checkbox" name="entertainment" id="vr" value="vr">
                     </fieldset>
                 </fieldset>
 
                 <fieldset>
-                    <h2>Выбери дату и время</h2>
-                    <fieldset>
-                        <label for="date-field">Дата</label>
-                        <input type="date" name="reserve-date" id="date-field" required>
+                    <legend>Выбери дату и время</legend>
+                    <div>
+                
+                        
+                        <input type="text" name="reserve-date" placeholder="Дата" required>
+                        <input type="text" name="reserve-time"  placeholder="Время" required>
+                        
+                    </div>
+                    <div>
+                    <input type="number" name="number" placeholder="Сколько человек" required>
+                    </div>
+            
 
-
-                        <label for="time-field">Время</label>
-                        <input type="time" name="reserve-time" id="time-field" required>
-
-
-
-                        <label for="number-field">Сколько человек</label>
-                        <input type="number" name="number" id="number-field" required>
-                    </fieldset>
-
-                    <fieldset>
+                    <div>
                         <label for="name-field">Имя</label>
                         <input type="text" name="name" id="name-field" required>
 
 
                         <label for="surname-field">Фамилия</label>
                         <input type="text" name="surname" id="surname-field" required>
-                    </fieldset>
+                    </div>
 
-                    <fieldset>
+                    <div>
                         <label for="phone-field">Телефон</label>
                         <input type="tel" name="phone" id="phone-field" required>
                         <label for="email-field">E-mail</label>
                         <input type="email" name="email" id="email-field">
-                    </fieldset>
+                    </div>
                 </fieldset>
 
 
@@ -212,8 +209,6 @@
         </section>
 
         <section id="reviews">
-
-                <fieldset>
                     <h2>Отзывы посетителей</h2>
             <ul>
                     <li>
@@ -244,8 +239,6 @@
                             войн, попал в атмосферу космоса.</p>
                     </li>
                 </ul>
-                </fieldset>
-
             
         </section>
     </main>
@@ -275,6 +268,7 @@
             </ul>
         </nav>
     </footer>
+</div>
 </body>
 
 </html>
