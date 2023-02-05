@@ -5,6 +5,7 @@
 body {
     background-color: #1B1A1B;
     color: #FFF;
+    margin-bottom: 0;
 }
 
 .blockquote {
@@ -16,5 +17,4 @@ body {
     padding: 30px;
     margin: 0 auto;
 }
-
 
