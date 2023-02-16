@@ -2,19 +2,219 @@
     box-sizing: border-box;
 }
 
-body {
+.body {
     background-color: #1B1A1B;
     color: #FFF;
+    margin: 0;
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: 400; 
+}
+
+.wrapper {
+    width: 1180px;
+    margin: 0 auto; 
+    margin-right: 130px;
+    margin-left: 130px; 
+}
+
+.section {
+    padding-bottom: 100px;
+}
+
+.header {
+    height: 823px;
+    margin-top: 146px;
+    background: url("../img/man.png") no-repeat;
+    background-position: top 61px left 505px;
+    background-size: 675px 762px;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.main-title {
+margin: 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 150px; 
+    line-height: 150px;
+    letter-spacing: -15px;
+}
+
+.subtitle {
+    margin-bottom: 60px;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+}
+
+.hall-title {
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 80px;
+    text-transform: uppercase;
+    max-width: 211px;
+    margin: 0 auto;
+}
+
+.subtitle-reserve {
+    margin-bottom: 50px;
+}
+
+.subtitle-about {
+    margin-bottom: 50px;
+}
+
+.subtitle:last-of-type {
+    margin-bottom: 54px;
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-header {
+    padding-left: 100px;
+    font-size: 28px;
+    line-height: 50px;
+}
+
+.text-about {
+    line-height: 28px;
+} 
+
+.text-about:not(:last-of-type) {
+    margin-bottom: 22px;
+}
+
+.list-halls {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none; 
+}
+
+.list-halls-item {
+    height: 710px;
+    margin-bottom: 60px;
+    padding-top: 275px;
+}
+
+.list-item-vibes {
+    background-image: url("/img/80s-vibes.jpg");
+}
+.list-item-starwars {
+    background-image: url("../img/star-wars.jpg");
+}
+.list-item-wildwest {
+    background-image: url("../img/wild-west.jpg");
+}
+.list-item-neonstyle{
+    background-image: url("../img/neon-style.jpg");
+}
+
+.list-halls :last-child {
     margin-bottom: 0;
 }
 
 .blockquote {
+    margin: 0;
     text-transform: uppercase;
+    margin-top: 78px;
+    font-size: 44px;
 }
 
-.wrapper {
-    width: 1200px;
-    padding: 30px;
-    margin: 0 auto;
+.cite {
+    margin-left: 791px;
+    margin-top: 40px;
+    text-transform:none;
+    line-height: 28px;
+    font-size: 20px;
+    width: 390px;   
 }
 
+.quote {
+    max-width: 1125px;
+    text-align: left;
+    margin-left: 50px;  
+}
+
+.quote:before {
+    content: "\201c";
+    color: #6C0287;
+    width: 39px;
+    height: 34px;
+    font-weight: 900;
+    padding-right: 16px;
+}
+
+.quote:after {
+    content: "\201d";
+    color: #6C0287;
+    width: 39px;
+    height: 34px;
+    font-weight: 900;
+    padding-right: 16px;
+}
+
+.questions-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.questions-list :last-child {
+    margin-bottom: 0;
+}
+
+.img-man {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    object-fit: cover;
+    float: left;
+    margin-right: 30px;
+}
+
+.adress {
+    display: inline-block;
+    margin-bottom: 38px;
+}
+
+.img-adress {
+    float: left;
+    margin-right: 36px; 
+}
+
+.adress-text {
+    font-size: 24px;
+    line-height: 28px; 
+    font-weight: 700;
+}
+
+.adress-info {
+    width: 415px;
+    height: 167px;
+}
+
+.link-adress {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    line-height: 28px; 
+    font-weight: 700;
+}
+
+.nav-list {
+    margin-bottom: 51px;
+    padding-left: 0;
+    margin-top: 40px;
+}
+
+.nav-list-item {
+    display: inline;
+    margin-right: 27px;
+}

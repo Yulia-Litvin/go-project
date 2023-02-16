@@ -19,3 +19,12 @@
     background-color: #440F51;
     color: #FFF;    
 }
+
+.logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 2464px;
+    height: 3371px;
+    z-index: 98;
+  }
