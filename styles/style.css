@@ -13,9 +13,8 @@
 
 .wrapper {
     width: 1180px;
-    margin: 0 auto; 
-    margin-right: 130px;
-    margin-left: 130px; 
+    padding: 30px;
+    margin: 0 auto;
 }
 
 .section {
@@ -104,7 +103,7 @@ margin: 0;
 }
 
 .list-item-vibes {
-    background-image: url("/img/80s-vibes.jpg");
+    background-image: url("../img/80s-vibes.jpg");
 }
 .list-item-starwars {
     background-image: url("../img/star-wars.jpg");
@@ -120,44 +119,61 @@ margin: 0;
     margin-bottom: 0;
 }
 
+.info-about {
+    margin-bottom: 70px;
+}
+
 .blockquote {
     margin: 0;
     text-transform: uppercase;
-    margin-top: 78px;
     font-size: 44px;
+    padding-left: 55px;
+    padding-top: 8px;
+    position: relative;
+    display: flow-root;
+    
 }
 
 .cite {
-    margin-left: 791px;
-    margin-top: 40px;
+    margin: 0;
+    float: right;
     text-transform:none;
     line-height: 28px;
+    font-size: 20px;  
+}
+
+.man-text {
+    float: right;
+    text-transform: none;
+    line-height: 28px;
     font-size: 20px;
-    width: 390px;   
+    width: 250px;   
 }
 
 .quote {
     max-width: 1125px;
-    text-align: left;
-    margin-left: 50px;  
+    text-align: left;  
+    quotes: none;
 }
 
-.quote:before {
+
+.blockquote:before {
     content: "\201c";
     color: #6C0287;
-    width: 39px;
-    height: 34px;
     font-weight: 900;
-    padding-right: 16px;
+    position: absolute;
+    left: 16px;
+    top: -8px;
 }
 
 .quote:after {
-    content: "\201d";
+    content: " \201d";
     color: #6C0287;
-    width: 39px;
-    height: 34px;
-    font-weight: 900;
-    padding-right: 16px;
+    font-weight: 900; 
+}
+
+.text-quote {
+    margin-bottom: 40px;
 }
 
 .questions-list {
@@ -175,18 +191,78 @@ margin: 0;
     height: 80px;
     border-radius: 100px;
     object-fit: cover;
+    object-position: top -10px left 0;
     float: left;
     margin-right: 30px;
 }
 
-.adress {
-    display: inline-block;
-    margin-bottom: 38px;
+.footer {
+    padding-bottom: 51px;
 }
 
-.img-adress {
-    float: left;
-    margin-right: 36px; 
+.nav-list {
+    font-size: 0;
+    margin: 0;
+    padding-left: 0;
+    height: 50px;  
+}
+
+.nav-list :last-child {
+    margin-right: 0;
+}
+
+.nav-list-item {
+    display: inline;
+    margin-right: 27px;
+    display: inline-block;
+}
+
+.contacts-block {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 38px;
+    padding-left: 63px;
+    width: 415px;
+    display: block;
+}
+
+.contacts-block-adress {
+    width: 300px;
+}
+
+.contacts-block-tel {
+    margin-bottom: 11px;
+}
+
+.contacts-block-adress:before {
+    content: "";
+    background: url("../img/location.svg") no-repeat; 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 35px;
+    height: 32px;
+}
+
+.contacts-block-tel:before {
+    content: "";
+    background: url("../img/phone.svg") no-repeat; 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 35px;
+    height: 32px;
+}
+
+.contacts-block-mail:before {
+    content: "";
+    background: url("../img/envelope.svg") no-repeat; 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 35px;
+    height: 32px;
 }
 
 .adress-text {
@@ -195,7 +271,7 @@ margin: 0;
     font-weight: 700;
 }
 
-.adress-info {
+.contacts-info {
     width: 415px;
     height: 167px;
 }
@@ -208,13 +284,7 @@ margin: 0;
     font-weight: 700;
 }
 
-.nav-list {
-    margin-bottom: 51px;
-    padding-left: 0;
-    margin-top: 40px;
-}
-
-.nav-list-item {
-    display: inline;
-    margin-right: 27px;
+.img-adress {
+    float: left;
+    margin-right: 36px; 
 }
