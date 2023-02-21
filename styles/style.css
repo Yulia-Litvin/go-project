@@ -12,32 +12,21 @@
 }
 
 .wrapper {
-    width: 1180px;
-    padding: 30px;
+    width: 1200px;
+    padding: 0 30px;
     margin: 0 auto;
+}
+
+.container {
+    width: 1180px;
 }
 
 .section {
     padding-bottom: 100px;
 }
 
-.header {
-    height: 823px;
-    margin-top: 146px;
-    background: url("../img/man.png") no-repeat;
-    background-position: top 61px left 505px;
-    background-size: 675px 762px;
-    text-align: left;
-    margin-bottom: 100px;
-}
-
-.main-title {
-margin: 0;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 150px; 
-    line-height: 150px;
-    letter-spacing: -15px;
+.section-header {
+    padding-top: 146px;
 }
 
 .subtitle {
@@ -46,24 +35,6 @@ margin: 0;
     text-transform: uppercase;
     font-size: 40px;
     text-align: center;
-}
-
-.hall-title {
-    font-size: 70px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 80px;
-    text-transform: uppercase;
-    max-width: 211px;
-    margin: 0 auto;
-}
-
-.subtitle-reserve {
-    margin-bottom: 50px;
-}
-
-.subtitle-about {
-    margin-bottom: 50px;
 }
 
 .subtitle:last-of-type {
@@ -75,216 +46,11 @@ margin: 0;
     margin-bottom: 0;
 }
 
-.text-header {
-    padding-left: 100px;
-    font-size: 28px;
-    line-height: 50px;
-}
-
-.text-about {
-    line-height: 28px;
-} 
-
-.text-about:not(:last-of-type) {
-    margin-bottom: 22px;
-}
-
-.list-halls {
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 0;
-    list-style: none; 
-}
-
-.list-halls-item {
-    height: 710px;
-    margin-bottom: 60px;
-    padding-top: 275px;
-}
-
-.list-item-vibes {
-    background-image: url("../img/80s-vibes.jpg");
-}
-.list-item-starwars {
-    background-image: url("../img/star-wars.jpg");
-}
-.list-item-wildwest {
-    background-image: url("../img/wild-west.jpg");
-}
-.list-item-neonstyle{
-    background-image: url("../img/neon-style.jpg");
-}
-
-.list-halls :last-child {
-    margin-bottom: 0;
-}
-
-.info-about {
-    margin-bottom: 70px;
-}
-
-.blockquote {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 44px;
-    padding-left: 55px;
-    padding-top: 8px;
-    position: relative;
-    display: flow-root;
-    
-}
-
-.cite {
-    margin: 0;
-    float: right;
-    text-transform:none;
-    line-height: 28px;
-    font-size: 20px;  
-}
-
-.man-text {
-    float: right;
-    text-transform: none;
-    line-height: 28px;
-    font-size: 20px;
-    width: 250px;   
-}
-
-.quote {
-    max-width: 1125px;
-    text-align: left;  
-    quotes: none;
-}
 
 
-.blockquote:before {
-    content: "\201c";
-    color: #6C0287;
-    font-weight: 900;
-    position: absolute;
-    left: 16px;
-    top: -8px;
-}
 
-.quote:after {
-    content: " \201d";
-    color: #6C0287;
-    font-weight: 900; 
-}
 
-.text-quote {
-    margin-bottom: 40px;
-}
 
-.questions-list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-}
 
-.questions-list :last-child {
-    margin-bottom: 0;
-}
 
-.img-man {
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
-    object-fit: cover;
-    object-position: top -10px left 0;
-    float: left;
-    margin-right: 30px;
-}
 
-.footer {
-    padding-bottom: 51px;
-}
-
-.nav-list {
-    font-size: 0;
-    margin: 0;
-    padding-left: 0;
-    height: 50px;  
-}
-
-.nav-list :last-child {
-    margin-right: 0;
-}
-
-.nav-list-item {
-    display: inline;
-    margin-right: 27px;
-    display: inline-block;
-}
-
-.contacts-block {
-    margin: 0;
-    position: relative;
-    display: inline-block;
-    margin-bottom: 38px;
-    padding-left: 63px;
-    width: 415px;
-    display: block;
-}
-
-.contacts-block-adress {
-    width: 300px;
-}
-
-.contacts-block-tel {
-    margin-bottom: 11px;
-}
-
-.contacts-block-adress:before {
-    content: "";
-    background: url("../img/location.svg") no-repeat; 
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 35px;
-    height: 32px;
-}
-
-.contacts-block-tel:before {
-    content: "";
-    background: url("../img/phone.svg") no-repeat; 
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 35px;
-    height: 32px;
-}
-
-.contacts-block-mail:before {
-    content: "";
-    background: url("../img/envelope.svg") no-repeat; 
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 35px;
-    height: 32px;
-}
-
-.adress-text {
-    font-size: 24px;
-    line-height: 28px; 
-    font-weight: 700;
-}
-
-.contacts-info {
-    width: 415px;
-    height: 167px;
-}
-
-.link-adress {
-    text-decoration: none;
-    color: #FFF;
-    font-size: 24px;
-    line-height: 28px; 
-    font-weight: 700;
-}
-
-.img-adress {
-    float: left;
-    margin-right: 36px; 
-}

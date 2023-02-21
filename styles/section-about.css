@@ -1,0 +1,77 @@
+.subtitle-about {
+    margin-bottom: 50px;
+}
+
+.text-about {
+    line-height: 28px;
+} 
+
+.text-about:not(:last-of-type) {
+    margin-bottom: 22px;
+}
+
+.info-about {
+    margin-bottom: 70px;
+}
+
+.blockquote {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 44px;
+    padding-left: 55px;
+    line-height: 50px;
+    position: relative;
+    display: flow-root;  
+}
+
+.blockquote:before {
+    content: "\201c";
+    color: #6C0287;
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: -8px;
+}
+
+.cite {
+    margin: 0;
+    float: right;
+    text-transform:none;
+    line-height: 28px;
+    font-size: 20px;  
+}
+
+.man-text {
+    float: right;
+    text-transform: none;
+    line-height: 28px;
+    font-size: 20px;
+    width: 250px;   
+}
+
+.quote {
+    max-width: 1125px;
+    text-align: left;  
+    quotes: none;
+}
+
+.quote:after {
+    content: " \201d";
+    color: #6C0287;
+    font-weight: 900; 
+}
+
+.text-quote {
+    white-space: pre;
+    margin-bottom: 40px;
+}
+
+.img-man {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: top -10px left 0;
+    float: left;
+    margin-right: 30px;
+}
