@@ -8,13 +8,6 @@
     margin: 0 auto;
 }
 
-.list-halls {
-    margin-bottom: 0;
-    margin-top: 0;
-    padding-left: 0;
-    list-style: none; 
-}
-
 .list-halls-item {
     height: 710px;
     margin-bottom: 60px;

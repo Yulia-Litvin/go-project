@@ -20,6 +20,9 @@
     color: #FFF;    
 }
 
+.subtitle-questions {
+    margin-bottom: 40px;
+}
 .logo {
     position: absolute;
     left: 0px;
@@ -27,12 +30,6 @@
     width: 2464px;
     height: 3371px;
     z-index: 98;
-}
-
-.questions-list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
 }
 
 .questions-list :last-child {
