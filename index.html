@@ -11,19 +11,17 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 
-<div class="wrapper">
-<body class="body">   
-<div class="container">
-    <section class=" section section-header">
-            <header class="header">
-            <h1 class="main-title">Game Over</h1>
-            <p class="text text-header">Новый формат игр и отдыха</p>
-        </header>
-    </section>
-        
-
+<body class="body">  
         <main>
             <section class="section">
+                <div class="container hero">
+                <h1 class="hero-title">Game Over</h1>
+                <p class="text text-hero">Новый формат игр и отдыха</p>
+            </div>
+        </section>
+
+            <section class="section">
+                <div class="container">
                 <h2 class="subtitle">Наши залы</h2>
                 <ol class="list-halls">
                     <li class="list-halls-item list-item-vibes">
@@ -39,11 +37,12 @@
                         <p class="text hall-title">Neon style</p>
                     </li>
                 </ol>
+            </div>
             </section>
 
             <section class="section">
+                <div class="container">
                 <h2 class="subtitle subtitle-reserve">Забронировать</h2>
-
                 <form action="https://jsonplaceholder.typicode.com/posts">
                     <fieldset>
                         <legend>Выбери зал</legend>
@@ -132,9 +131,11 @@
                     </fieldset>
                     <button type="submit">Забронировать</button>
                 </form>
+            </div>>
             </section>
 
             <section class="section">
+                <div class="container">
                 <div class="info-about">
                 <h2 class="subtitle subtitle-about">О нас</h2>
                 <p class="text text-about">Для наших гостей мы создали концептуально новое игровое пространство
@@ -155,9 +156,11 @@
                         <figcaption class="text man-text">Аркадий Абакшин, создатель игровой территории GAME OVER</figcaption>
                     </figure>
                 </blockquote>
+            </div>
             </section>
 
             <section class="section">
+                <div class="container">
                 <h2 class="subtitle subtitle-questions">Частые вопросы</h2>
                 <ul class="questions-list">
                     <li class="questions-item">Можно ли забронировать комнату онлайн?</li>
@@ -166,11 +169,12 @@
                     <li class="questions-item">Как получить VIP карту?</li>
                     <li class="questions-item">Какая комната самая популярная?</li>
                 </ul>
+            </div>
             </section>
         </main>
 
-        <section class="section">
-        <footer class="footer">
+        <footer class="section footer">
+            <div class="container">
             <h2 class="subtitle">Контакты</h2>
             <adress class="contacts-info">
                     <p class="contacts-block contacts-block-adress">г. Москва ул.Аквамарина, 16</p>
@@ -201,9 +205,7 @@
                     </li>
                 </ul>
             </nav>
+        </div>
         </footer>
-    </section>
-    </div>
 </body>
-</div>
 </html>
