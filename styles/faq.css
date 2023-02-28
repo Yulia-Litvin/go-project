@@ -1,4 +1,4 @@
-.questions-item {
+.faq-item {
     list-style: none;
     font-weight: 700;
     font-size: 24px;
@@ -6,32 +6,21 @@
     margin-bottom: 20px;
 }
 
-.questions-list :last-child {
+.faq-list :last-child {
     margin-bottom: 0;
 }
 
-.questions-list :nth-child(odd) {
+.faq-list :nth-child(odd) {
     color: #1C1A1A;
     background-color: #FFF; 
 } 
 
-.questions-list :nth-child(even) {
+.faq-list :nth-child(even) {
     background-color: #440F51;
     color: #FFF;    
 }
 
-.subtitle-questions {
+.faq__title {
     margin-bottom: 40px;
 }
-.logo {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 2464px;
-    height: 3371px;
-    z-index: 98;
-}
 
-.questions-list :last-child {
-    margin-bottom: 0;
-}

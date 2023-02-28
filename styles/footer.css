@@ -1,35 +1,20 @@
-.nav-list {
-    height: 50px;  
-}
-
-.nav-list :last-child {
-    margin-right: 0;
-}
-
-.nav-list-item {
-    display: inline;
-    margin-right: 27px;
-    display: inline-block;
-}
-
-.contacts-info {
+.footer__contacts {
     display: block;
     margin-bottom: 39px;
 }
 
-.contacts-block {
+.contacts__block {
     margin-top: 0;
     margin-bottom: 11px;
     position: relative;
     padding-left: 63px;
     width: 360px;
-    display: block;
     font-size: 24px;
     line-height: 28px; 
     font-weight: 700;
 }
 
-.contacts-block:before {
+.contacts__block:before {
     content: "";
     position: absolute;
     width: 35px;
@@ -40,32 +25,45 @@
     background-repeat: no-repeat;
 }
 
-.contacts-block:first-child {
+.contacts__block:first-child {
     margin-bottom: 38px;
 }
 
-.contacts-block:last-child {
+.contacts__block:last-child {
     margin-bottom: 0;
 }
 
-.contacts-block-adress:before { 
+.contacts__block--adress:before { 
     background-image: url("../img/location.svg"); 
 }
     
-.contacts-block-tel:before {
+.contacts__block--tel:before {
     background-image: url("../img/phone.svg"); 
 }
 
-.contacts-block-mail:before {
+.contacts__block--mail:before {
     background-image: url("../img/envelope.svg"); 
 }
 
-.link-adress {
+.contacts__link {
     display: block;
     color: #FFF; 
 }
 
-.img-adress {
-    float: left;
-    margin-right: 36px; 
+.nav__list {
+    font-size: 0;  
 }
+
+.nav__list :last-child {
+    margin-right: 0;
+}
+
+.nav__link {
+    display: block;
+}
+
+.nav__item {
+    margin-right: 27px;
+    display: inline-block;
+}
+

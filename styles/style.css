@@ -66,15 +66,11 @@ blockquote {
     padding-top: 146px;
 }
 
-.section:last-child {
+.section:last-of-type {
     padding-bottom: 51px;
 }
 
-.section-header {
-    padding-top: 146px;
-}
-
-.subtitle {
+.section__title {
     margin-bottom: 60px;
     margin-top: 0;
     text-transform: uppercase;
@@ -82,9 +78,10 @@ blockquote {
     text-align: center;
 }
 
-.subtitle :last-of-type {
-    margin-bottom: 54px;
+.section__title:last-of-type {
+    margin-bottom: 54px; 
 }
+
 
 
 
