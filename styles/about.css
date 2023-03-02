@@ -1,10 +1,11 @@
-.about__title {
-    margin-bottom: 50px;
-}
-
-.about__info :first-child {
+.about__text {
     margin-bottom: 22px;
 }
+
+.about__text:last-child {
+    margin-bottom: 0;
+}
+
 
 .about__info {
     margin-bottom: 70px;
@@ -43,7 +44,7 @@
     font-weight: 900; 
 }
 
-.blockquote__image-block {
+.creator-block {
     float: right;
     text-transform: none;
     line-height: 28px; 
@@ -51,12 +52,12 @@
     margin-right: 30px; 
 }
 
-.image-block__text {
+.creator__text {
     float: right;
     width: 250px;   
 }
 
-.image-block__img {
+.creator__img {
     width: 80px;
     height: 80px;
     border-radius: 100px;

@@ -71,16 +71,14 @@ blockquote {
 }
 
 .section__title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     margin-top: 0;
     text-transform: uppercase;
     font-size: 40px;
     text-align: center;
 }
 
-.section__title:last-of-type {
-    margin-bottom: 54px; 
-}
+
 
 
 

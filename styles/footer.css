@@ -12,6 +12,8 @@
     font-size: 24px;
     line-height: 28px; 
     font-weight: 700;
+    display: block;
+    color: #FFF; 
 }
 
 .contacts__block:before {
@@ -33,21 +35,16 @@
     margin-bottom: 0;
 }
 
-.contacts__block--adress:before { 
+.contacts__block--type--adress:before { 
     background-image: url("../img/location.svg"); 
 }
     
-.contacts__block--tel:before {
+.contacts__block--type--tel:before {
     background-image: url("../img/phone.svg"); 
 }
 
-.contacts__block--mail:before {
+.contacts__block--type--mail:before {
     background-image: url("../img/envelope.svg"); 
-}
-
-.contacts__link {
-    display: block;
-    color: #FFF; 
 }
 
 .nav__list {
