@@ -105,20 +105,23 @@
                     <fieldset class="reserve-form__item">
                         <legend class="reserve-form__title">Выбери дату и время</legend>
                         <div class="field field--type--date-time">
-                            <input type="text" name="reserve-date" placeholder="Дата" required>
-                            <input type="text" name="reserve-time" placeholder="Время" required>
+                            <label for="date-field">Дата</label>
+                            <input type="date" name="reserve-date"  id="date-field" required>
+                            <label for="time-field">Время</label>
+                            <input type="time" name="reserve-time" id= "time-field" required>
                         </div>
 
                         <div class="field field--type--amount-people">
-                            <input type="number" name="number" placeholder="Сколько человек" required>
+                            <label for="amount-field">Сколько человек</label>
+                            <input type="number" name="number" id="amount-field" required>
                         </div>
 
                         <div class="field field--type--name">
-                            <input type="text" name="name" id="name-field" required>
                             <label for="name-field">Имя</label>
+                            <input type="text" name="name" id="name-field" required>
 
-                            <input type="text" name="surname" id="surname-field" required>
                             <label for="surname-field">Фамилия</label>
+                            <input type="text" name="surname" id="surname-field" required>    
                         </div>
 
                         <div class="field field--type--contact">
@@ -127,8 +130,12 @@
                             <label for="email-field">E-mail</label>
                             <input type="email" name="email" id="email-field">
                         </div>
+                        <input type="checkbox" name="age" id="age">
+                        <label for="age">Я старше 18 лет</label>
                     </fieldset>
                     <button type="submit">Забронировать</button>
+                    <input type="checkbox" name="agree" id="agreement">
+                    <label for="agreement">Cогласен на обработку данных</label>        
                 </form>
             </div>
         </section>
@@ -136,6 +143,8 @@
         <section class="section about">
             <div class="container">
                 <h2 class="section__title">О нас</h2>
+                <img class="img-photos" src="img/photos.jpg" alt="разные картинки">
+                <div class="about__block">
                 <div class="about__info">
                     <p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство
                         виртуальной реальности в
@@ -157,7 +166,10 @@
                         </figcaption>
                     </figure>
                 </blockquote>
+            
             </div>
+            </div>
+            
         </section>
 
         <section class="section faq">

@@ -1,23 +1,34 @@
-.faq-item {
+.faq__item {
     list-style: none;
     font-weight: 700;
     font-size: 24px;
     padding: 30px 70px;
     margin-bottom: 20px;
+    line-height: 45px;
 }
 
-.faq-list :last-child {
+.faq__list :last-child {
     margin-bottom: 0;
 }
 
-.faq-list :nth-child(odd) {
+.faq__list :nth-child(odd) {
     color: #1C1A1A;
     background-color: #FFF; 
 } 
 
-.faq-list :nth-child(even) {
+.faq__list :nth-child(even) {
     background-color: #440F51;
     color: #FFF;    
 }
 
+.faq__item:nth-child(odd)::after{
+    content: url("../img/open-purple.svg");
+    height: 46px;
+    float: right;   
+}
 
+.faq__item:nth-child(even)::after{
+    content: url("../img/open-white.svg");
+    height: 46px;
+    float: right;
+}
