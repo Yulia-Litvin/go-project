@@ -6,7 +6,6 @@
 .reviews__item {
     display: flow-root;
     margin-bottom: 50px;
-    position: relative;
 }
 
 .reviews__item:last-child {
@@ -15,9 +14,9 @@
 
 .reviews__text {
     line-height: 28px;
-    position: absolute;
-    top: 52px;
     display: inline-block;
+    max-width: 650px;
+    padding-top: 50px;  
 }
 
 .reviews__content {
