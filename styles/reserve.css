@@ -1,3 +1,131 @@
-.field {
-    display: inline-block;
+.reserve {
+    background-color: rgba(68, 15, 81, 1);
 }
+
+.reserve-info {
+    gap: 50px;
+}
+
+.reserve-hall {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.reserve-form__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.reserve-form__text {
+    margin-bottom: 23px;
+    align-items: baseline;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.reserve-entertainment {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    gap: 150px;
+    margin-bottom: 60px;
+    
+}
+
+.choice-box__input {
+    width: 27px;
+    height: 27px;
+}
+
+.choice-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.reserve-hall__label {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 1);
+    width: 250px;
+    border-radius: 8px;
+    padding: 7px 15px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reserve-info {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.reserve-info__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.reserve-info__field-date {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 36px;
+}
+
+.reserve-info__input-date {
+    width: 132px;
+    height: 52px;
+}
+
+.reserve-info__input-amount {
+    width: 300px;
+    height: 52px;
+}
+
+.reserve-info__label {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.reserve-info__input {
+    outline: 0;
+    padding: 15px;
+    margin-bottom: 17px;
+    width: 300px;
+    height: 52px;
+}
+
+.reserve-info__input:last-child {
+    margin-bottom: 0;
+
+}
+
+.reserve__button {
+    margin: 0 90px 0 auto;
+    background-color: #fff;
+    color: #6C0287;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 50px;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    display: flex;
+}
+

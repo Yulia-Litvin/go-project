@@ -1,0 +1,29 @@
+.header {
+    padding-top: 38px;
+    font-size: 22px;  
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav__list {
+    display: flex;
+    gap: 40px; 
+}
+
+.menu__button {
+    padding: 12px 32px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 3px solid #CD06FF;
+    border-radius: 10px;
+}

@@ -1,6 +1,13 @@
 .footer__contacts {
     display: block;
     margin-bottom: 39px;
+    max-width: 380px;
+}
+
+.contacts-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 156px;
 }
 
 .contacts__block {
@@ -62,5 +69,9 @@
 .nav__item {
     margin-right: 27px;
     display: inline-block;
+    line-height: 16px;
 }
 
+.about-author {
+    text-align: end;
+}

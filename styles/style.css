@@ -25,6 +25,10 @@ a {
     color: inherit;
 }
 
+fieldset {
+    border: 0 none;
+}
+
 ul, ol {
     list-style: none;
     padding: 0;
@@ -62,21 +66,20 @@ blockquote {
     padding-bottom: 50px;
 }
 
-.section:first-child {
-    padding-top: 146px;
-}
-
 .section:last-of-type {
     padding-bottom: 51px;
 }
 
 .section__title {
-    margin-bottom: 50px;
-    margin-top: 0;
     text-transform: uppercase;
     font-size: 40px;
     text-align: center;
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    line-height: 50px;  
 }
+
 
 
 

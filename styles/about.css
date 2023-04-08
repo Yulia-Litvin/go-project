@@ -73,3 +73,15 @@
     float: right;
     width: 490px;
 }
+
+.footer__about {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+}
+
+.about-author__text {
+    margin-bottom: 6px;
+}
