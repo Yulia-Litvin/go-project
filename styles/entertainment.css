@@ -15,29 +15,29 @@
     width: 380px;
     height: 228px;
     background-size: cover; 
-    padding: 166px 40px 34px;
+    padding: 166px 40px 12px;
 }
 
-.entertainment__item--vr {
+.entertainment__item--type--vr {
     background-image: url("../img/vr.jpg"); 
 }
 
-.entertainment__item--audio {
+.entertainment__item--type--audio {
     background-image: url("../img/audio.jpg"); 
 }
 
-.entertainment__item--micro {
+.entertainment__item--type--micro {
     background-image: url("../img/micro.jpg"); 
 }
 
-.entertainment__item--game {
+.entertainment__item--type--game {
     background-image: url("../img/game.jpg"); 
 }
 
-.entertainment__item--netflix {
+.entertainment__item--type--netflix {
     background-image: url("../img/netflix.jpg"); 
 }
 
-.entertainment__item--sony {
+.entertainment__item--type--sony {
     background-image: url("../img/sony.jpg"); 
 }

@@ -2,10 +2,6 @@
     background-color: rgba(68, 15, 81, 1);
 }
 
-.reserve-info {
-    gap: 50px;
-}
-
 .reserve-hall {
     display: flex;
     justify-content: space-between;
@@ -20,7 +16,15 @@
     margin-bottom: 38px;
 }
 
-.reserve-form__text {
+.reserve-entertainment {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+    margin-bottom: 60px; 
+}
+
+.reserve-entertainment__title {
     margin-bottom: 23px;
     align-items: baseline;
     font-weight: 700;
@@ -28,21 +32,12 @@
     line-height: 28px;
 }
 
-.reserve-entertainment {
-    max-width: 980px;
-    margin: 0 auto;
-    display: flex;
-    gap: 150px;
-    margin-bottom: 60px;
-    
-}
-
-.choice-box__input {
+.reserve-etertainment__input {
     width: 27px;
     height: 27px;
 }
 
-.choice-box {
+.reserve-etertainment__label {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -71,13 +66,40 @@
 
 .reserve-info {
     max-width: 980px;
+    gap: 50px;
     margin: 0 auto;
     display: flex;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.reserve-info__label {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.reserve-info__input {
+    padding: 15px;
+    margin-bottom: 17px;
+    
 }
 
 .reserve-info__block {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+}
+
+.reserve-name {
+    max-width: 280px;
+}
+
+.reserve-contacts {
+    min-width: 300px;
+}
+
+.reserve-date {
+    min-width: 300px;
     justify-content: flex-end;
 }
 
@@ -92,32 +114,13 @@
     height: 52px;
 }
 
-.reserve-info__input-amount {
-    width: 300px;
-    height: 52px;
-}
-
-.reserve-info__label {
-    font-weight: 700;
-    font-size: 14px;
-    margin-bottom: 6px;
-}
-
-.reserve-info__input {
-    outline: 0;
-    padding: 15px;
-    margin-bottom: 17px;
-    width: 300px;
-    height: 52px;
-}
-
-.reserve-info__input:last-child {
+.reserve-info__block :last-child {
     margin-bottom: 0;
-
 }
 
 .reserve__button {
-    margin: 0 90px 0 auto;
+    display: block;
+    margin: 0 100px 0 auto;
     background-color: #fff;
     color: #6C0287;
     border: none;
@@ -128,4 +131,5 @@
     text-transform: uppercase;
     display: flex;
 }
+
 

@@ -27,19 +27,19 @@
     margin-right: 0; 
 }
 
-.halls__item--image--vibes {
+.halls__item--type--vibes {
     background-image: url("../img/80s-vibes.jpg");  
 }
 
-.halls__item--image--starwars {
+.halls__item--type--starwars {
     background-image: url("../img/star-wars.jpg");
 }
 
-.halls__item--image--wildwest {
+.halls__item--type--wildwest {
     background-image: url("../img/wild-west.jpg");
 }
 
-.halls__item--image--neonstyle{
+.halls__item--type--neonstyle{
     background-image: url("../img/neon-style.jpg");
 }
 

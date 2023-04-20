@@ -15,9 +15,7 @@
 
             <header class="header">
                 <div class="container menu">
-                
                 <img src="img/logo.svg" alt="logo">
-            
                 <nav class="menu-nav">
                     <ul class="menu-nav__list">
                         <li class="menu-nav__item"><a class="menu-nav__link" href="#halls">Залы</a></li>
@@ -27,7 +25,7 @@
                         <li class="menu-nav__item"><a class="menu-nav__link" href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
-                <button class="menu__button">Заказать звонок</button>
+                <button class="menu__button" type="button" href="#" >Заказать звонок</button>
             </div>
             </header>
 
@@ -36,43 +34,46 @@
                     <div class="container hero__container">
                         <h1 class="hero__title">Game Over</h1>
                         <p class="hero__text">Новый формат игр и отдыха</p>
-                        <img class="hero__image-man" src="img/man.png" alt="Мужфина в очках виртуальной реальности">
-                        <img class="hero__image-arrow" src="img/down.svg" alt="Круглый значок со стрелкой вниз">
-                        <div class="hero__booking">
-                            <div class="booking-about">
-                                <p class="booking-about__text booking-about__text--number-4">Тематических зала</p>
-                                <p class="booking-about__text booking-about__text--text-new">Новейшая аппаратура</p>
+                        <a href="#entertainment"><img class="hero__image-arrow" src="img/down.svg" alt="Круглый значок со стрелкой вниз"></a>
+                        <div class="hero__block">
+                            <div class="hero__block-about">
+                                <p class="hero__item-number">4</p>
+                                <p class="hero__item-text">Тематических зала</p>
+                            </div>
+                            <div class="hero__block-about">
+                                <p class="hero__item-word">NEW</p>
+                                <p class="hero__item-text">Новейшая аппаратура</p>
                             </div>
                         </div>
-                            <button class="hero__booking-button">Забронировать</button>    
+                            <a href="#reserve" class="hero__booking-button">Забронировать</a>    
                     </div>
                 </section>
 
-                <section class="section entertainment">
+                <section class="section entertainment" id="entertainment">
                     <div class="container">
-                    <h1 class="section__title">У нас есть все для классного отдыха с друзьями!</h1>
+                    <h2 class="section__title">У нас есть все для классного отдыха с друзьями!</h2>
                     <ul class="entertainment__list">
-                        <li class="entertainment__item entertainment__item--vr">
+                        <li class="entertainment__item entertainment__item--type--vr">
                                 <p class="entertainment__text">VR очки</p>
                         </li>
 
-                        <li class="entertainment__item entertainment__item--audio ">
+                        <li class="entertainment__item entertainment__item--type--audio ">
                                 <p class="entertainment__text">Аудио-система 5.1 с отличным звуком</p>
                         </li>
 
-                        <li class="entertainment__item entertainment__item--micro">
+                        <li class="entertainment__item entertainment__item--type--micro">
                                 <p class="entertainment__text">Караоке (4 микрофона)</p>
                         </li>
 
-                        <li class="entertainment__item entertainment__item--game ">
+                        <li class="entertainment__item entertainment__item--type--game ">
                                 <p class="entertainment__text">Настольные игры</p>
                         </li>
 
-                        <li class="entertainment__item entertainment__item--netflix ">
+                        <li class="entertainment__item entertainment__item--type--netflix ">
                                 <p class="entertainment__text">Кино сервисы Netflix, IVI, MegoGo, Кинопоиск, Okko</p>
                         </li>
 
-                        <li class="entertainment__item entertainment__item--sony ">
+                        <li class="entertainment__item entertainment__item--type--sony ">
                                 <p class="entertainment__text">PlayStation 5</p>
                         </li>
                     </ul>
@@ -83,16 +84,16 @@
                     <div class="container">
                         <h2 class="section__title">Наши залы</h2>
                         <ol class="halls__list">
-                            <li class="halls__item halls__item--image--vibes">
+                            <li class="halls__item halls__item--type--vibes">
                                 <p class="halls__text">80's vibes</p>
                             </li>
-                            <li class="halls__item halls__item--image--starwars">
+                            <li class="halls__item halls__item--type--starwars">
                                 <p class="halls__text"> Star wars</p>
                             </li>
-                            <li class="halls__item halls__item--image--wildwest">
+                            <li class="halls__item halls__item--type--wildwest">
                                 <p class="halls__text">Wild west </p>
                             </li>
-                            <li class="halls__item halls__item--image--neonstyle">
+                            <li class="halls__item halls__item--type--neonstyle">
                                 <p class="halls__text">Neon style</p>
                             </li>
                         </ol>
@@ -102,11 +103,10 @@
                 <section class="section reserve" id="reserve">
                     <div class="container">
                         <h2 class="section__title">Забронировать</h2>
-                        <form class="reserve-form" action="https://jsonplaceholder.typicode.com/posts">
-                            <fieldset class="reserve-form__block">
+                            <form class="reserve-form__block" action="https://jsonplaceholder.typicode.com/posts">
                                 
-                                <legend class="reserve-form__title">Выбери зал</legend>
-                                <div class="reserve-hall">
+                                <fieldset class="reserve-hall">
+                                    <legend class="reserve-form__title">Выбери зал</legend>
                                 <input class="reserve-hall__input visually-hidden" type="radio" name="halls" id="hall-1" value="80s-vibes">
                                 <label class="reserve-hall__label" for="hall-1">80's vibes</label>
 
@@ -118,107 +118,79 @@
 
                                 <input class="reserve-hall__input visually-hidden" type="radio" name="halls" id="hall-4" value="neon-style">
                                 <label class="reserve-hall__label" for="hall-4">neon style</label>
-                            </div>
+                            </fieldset>
 
                             <fieldset class="reserve-entertainment">
                                 <legend class="reserve-form__title">Собери набор развлечений</legend>
-                                    <div class="reserve-entertainment__item">
-                                    <p class="reserve-form__text">Приставка:</p>
+                                    <fieldset class="reserve-entertainment__item">
+                                    <legend class="reserve-entertainment__title">Приставка:</legend>
 
-                                    <div class="choice-box">
-                                    <input class="choice-box__input" type="radio" name="game-console" id="PS" value="PS">
-                                    <label for="PS">PlayStation</label>
-                                    </div>
+                                    <label class="reserve-etertainment__label">
+                                    <input class="reserve-etertainment__input" type="radio" name="game-console" value="PS">PlayStation</label>
+                    
+                                    <label class="reserve-etertainment__label">
+                                    <input class="reserve-etertainment__input" type="radio" name="game-console" id="sega" value="sega">Sega Mega Drive</label>
 
-                                    <div class="choice-box">
-                                    <input class="choice-box__input" type="radio" name="game-console" id="sega" value="sega">
-                                    <label for="sega">Sega Mega Drive</label>
-                                    </div>
+                                    <label class="reserve-etertainment__label">
+                                    <input class="reserve-etertainment__input" type="radio" name="game-console" id="xbox" value="x-box">X-box One S</label>
 
-                                    <div class="choice-box">
-                                    <input class="choice-box__input" type="radio" name="game-console" id="xbox" value="x-box">
-                                    <label for="xbox">X-box One S</label>
-                                    </div>
+                                    <label class="reserve-etertainment__label">
+                                    <input class="reserve-etertainment__input" type="radio" name="game-console" id="dendy" value="dendy"> Dendy</label>
+                            </fieldset>
 
-                                    <div class="choice-box">
-                                    <input class="choice-box__input" type="radio" name="game-console" id="dendy" value="dendy">
-                                    <label for="dendy">Dendy</label>
-                                </div>
-                                </div>
+                                    <fieldset class="reserve-entertainment__item">
+                                        <legend class="reserve-entertainment__title">Настольные игры:</legend>
+                                        <label  class="reserve-etertainment__label">
+                                    <input class="reserve-etertainment__input" type="checkbox" name="table-games" id="jenga" value="jenga">Jenga</label>
+                                            
+                                    <label class="reserve-etertainment__label">   
+                                    <input class="reserve-etertainment__input" type="checkbox" name="table-games" id="monopoly" value="monopoly">Monopoly</label>
 
-                                    <div class="reserve-entertainment__item">
-                                        <p class="reserve-form__text">Настольные игры:</p>
-                                        <div class="choice-box">
-                                    <input class="choice-box__input" type="checkbox" name="table-games" id="jenga" value="jenga">
-                                    <label for="jenga">Jenga</label>
-                                            </div>
-
-                                            <div class="choice-box">
-                                    <input class="choice-box__input" type="checkbox" name="table-games" id="monopoly" value="monopoly">
-                                    <label for="monopoly">Monopoly</label>
-                                </div>
-
-                                <div class="choice-box">
-                                    <input class="choice-box__input"  type="checkbox" name="table-games" id="manchkin" value="manchkin">
-                                    <label for="manchkin">Манчкин</label>
-                                    </div>
-
-                                    <div class="choice-box">
-                                    <input class="choice-box__input" type="checkbox" name="table-games" id="alias" value="alias">
-                                    <label for="alias">Alias</label>
-                                </div>
-                            </div>
+                                    <label class="reserve-etertainment__label">
+                                    <input class="reserve-etertainment__input"  type="checkbox" name="table-games" id="manchkin" value="manchkin">Манчкин</label>
+                                    
+                                    <label  class="reserve-etertainment__label">
+                                    <input class="reserve-etertainment__input" type="checkbox" name="table-games" id="alias" value="alias"> Alias</label> 
+                            </fieldset>
                             
-                                    <div class="reserve-entertainment__item">
-                                        <p class="reserve-form__text">Дополнительно:</p>
-                                    <div class="choice-box">
-                                    <input class="choice-box__input" type="checkbox" name="entertainment" id="karaoke" value="karaoke">
-                                    <label for="karaoke">Караоке</label>
-                                    </div>
-
-                                    <div class="choice-box">
-                                    <input class="choice-box__input"  type="checkbox" name="entertainment" id="vr" value="vr">
-                                    <label for="vr">VR</label>
-                                    </div>
-                                    </div>
+                                    <fieldset class="reserve-entertainment__item">
+                                        <legend class="reserve-entertainment__title">Дополнительно:</legend>
+                                        <label class="reserve-etertainment__label">
+                                    <input class="reserve-etertainment__input" type="checkbox" name="entertainment" id="karaoke" value="karaoke">Караоке</label>
+                                    
+                                <label  class="reserve-etertainment__label">
+                                    <input class="reserve-etertainment__input"  type="checkbox" name="entertainment" id="vr" value="vr">
+                                    VR</label>
                                 </fieldset>
+                            </fieldset>
 
                             <fieldset class="reserve-info">
                                 <legend class="reserve-form__title">Выбери дату и время</legend>
-                                <div class="reserve-info__block">
+                                <div class="reserve-info__block reserve-date">
                                 <div class="reserve-info__field-date">
                                     <input class="reserve-info__input-date" type="date" name="reserve-date"  id="date-field" required>
                                     <input class="reserve-info__input-date" type="time" name="reserve-time" id= "time-field" required>     
                                 </div>
-
-                                    <input class="reserve-info__input-amount" list="amount" type="number" name="number" id="amount-field" required>
-                                    <datalist id="amount">
-                                    <option>Сколько человек</option>
-                                    <option value="1"></option>
-                                    <option value="2"></option>
-                                    <option value="3"></option>
-                                    </datalist>
+                                <input class="reserve-info__input" type="number" name="number" id="amount-field" required>
                             </div>
 
-                                <div class="reserve-name">
+                                <div class=" reserve-info__block reserve-name">
                                     <label class="reserve-info__label" for="name-field">Имя</label>
                                     <input class="reserve-info__input" type="text" name="name" id="name-field" required>
-
                                     <label class="reserve-info__label" for="surname-field">Фамилия</label>
                                     <input class="reserve-info__input" type="text" name="surname" id="surname-field" required>    
                                 </div>
 
-                                <div class="reserve-contacts">
+                                <div class=" reserve-info__block reserve-contacts">
                                     <label class="reserve-info__label" for="phone-field">Телефон</label>
                                     <input class="reserve-info__input" type="tel" name="phone" id="phone-field" required>
                                     <label class="reserve-info__label" for="email-field">E-mail</label>
                                     <input class="reserve-info__input" type="email" name="email" id="email-field">
                                 </div>
                             </fieldset>
-                            </fieldset>  
-                        </form>
-                    <button class="reserve__button" type="submit">Забронировать</button>
-                </div>
+                            </form>
+                            <button class="reserve__button" type="submit">Забронировать</button>
+                    </div>
             </section>
 
             <section class="section about" id="about">
@@ -312,27 +284,29 @@
                 <h2 class="section__title">Контакты</h2>
                 <div class="contacts-info">
                 <div>
-                <adress class="footer__contacts contacts">
+                <address class="footer__contacts contacts">
                     <p class="contacts__block contacts__block--type--adress">г. Москва ул.Аквамарина, 16</p>
                         <a class="contacts__block contacts__block--type--tel" href="tel:89509302893">8(950)930-28-93</a>
                         <a class="contacts__block contacts__block--type--mail" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>     
-                </adress>
+                </address>
 
                 <nav class="footer__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="http://vk.com"><img class="nav__img" src="img/vk.svg"
-                                    alt="значок vk"></a>
+                            <a class="nav__link" href="http://vk.com">
+                                <img class="nav__img" src="img/vk.svg" alt="значок vk"></a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="http://tg.com"><img class="nav-img" src="img/telegram.svg" alt="значок telegram"></a>
+                            <a class="nav__link" href="http://tg.com">
+                                <img class="nav-img" src="img/telegram.svg" alt="значок telegram"></a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="http://pinterst.com"><img class="nav-img" src="img/pinterest.svg" alt="значок pinterest"></a>
+                            <a class="nav__link" href="http://pinterst.com">
+                                <img class="nav-img" src="img/pinterest.svg" alt="значок pinterest"></a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="http://stumbleupon.com"><img class=" nav-img" src="img/stumbleupon.svg"
-                                    alt="значок stumbleupon"></a>
+                            <a class="nav__link" href="http://stumbleupon.com">
+                                <img class=" nav-img" src="img/stumbleupon.svg" alt="значок stumbleupon"></a>
                         </li>
                     </ul>    
                 </nav>
@@ -344,12 +318,10 @@
                 <p>© Game Over, 2022</p>
                 <div class="about-author">
                     <p class="about-author__text"> by Anastasia Ilina</p>
-                    <p>ilina9825@gmail.com</p>
+                    <a  href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
                 </div>   
             </address>
         </div>
         </footer>
-
     </body>
-
     </html>
